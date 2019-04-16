@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">    
+    <title> آپارات | ورود و عضویت</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <style>
+        .space {
+            background-color: rgb(249, 249, 249);
+            font-family: iransans;
+        }
+        .container {
+            max-width: 410px;
+            min-height: 450px;
+            margin: auto;
+            background-color:#fff;
+            font-size: 14px;
+            line-height: 1.5;
+            color:rgb(120, 120, 120);
+            border:1px solid ;
+            border-color:  #f0f0f0;
+            border-radius: 2%;
+            font-family: iransans;
+        }
+        .upblock{
+            background-color: rgb(249, 249, 249);
+            width: 410px;
+            height:100px;
+            margin: auto;
+            text-align:center;
+            position:relative;
+            
+        }
+        .secondBlock {
+            border: solid ;
+            border-color:  #f0f0f0;
+            border-width:0px 0px 1px 0px;
+            text-align:right;
+            padding: 15px 30px;
+            position:relative;
+        }
+        .MidleBlock {
+            text-align:right;
+            padding: 30px 30px;
+            position:relative;
+        }
+        .bottomBlock {
+            border: solid ;
+            border-color:  #f0f0f0;
+            border-width:1px 0px 0px 0px;
+            height:50px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            border: 2px solid ;
+            position: relative;  
+            padding: 5px 0;
+            border-radius: 7%;
+            font-size: 14px;
+        }
+        .Uperbutton {
+            background-color:#ea1d5d; 
+            color: #fff;
+            width: 100%;
+            height: 42px;
+            margin: auto;
+            font-weight: 400;
+            font-family: iransans;
+            
+        }
+        .Uperbutton:hover {
+            background-color:#c21249;
+        }
+        .LastButton {
+            background-color: #fff;
+            color: #DD4B39;
+            width: 80%;
+            height: 42px;
+            margin: auto;
+            border-color:#DD4B39;
+            font-family: iransans;
+        }
+        .LastButton:hover {
+            background-color: #DD4B39;
+            color: #fff;
+        }
+        a {
+           color: #05a3e8;
+           padding-left: 17px;
+           position:absolute;
+           text-decoration :none;
+           target="_blank";
+        }
+        .GPlusLogo {
+            text-align: right;
+            width: 23px;
+            position: absolute;
+            right: 29px;
+            top:6px;
+        }
+        a:hover {     
+            color: #137eae;
+            
+        }
+        .memberLink{
+            right: 330px;
+            top: 28px;
+        }
+        .HelpLink {
+            right: 212px;
+            top: 135px;
+        }
+        .input{
+            display: block;
+            text-align: right;
+            margin: auto;
+            width: 86%;
+            height: 40px;
+            border:1px solid #DEDFE1;
+            border-radius: 5%;
+            font-weight: 400;
+            font-size: 16px;
+            outline-color: #788096;
+            color: #DEDFE1;
+            padding: 0 5px 0 40px;
+            font-family: iransans;
+        }
+        i{
+            position: absolute;
+            right: 350px;
+            top: 86px;
+            color: #787878;
+        }
+        .or{
+           position: absolute;
+           text-align:center;
+           top:220px;
+           right: 190px;
+           background-color: #fff;
+           font-size: 1.2rem;
+           color: #b1a9a5;
+           
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="space">
+    <br>
+    <br>
+    <div class="upblock" >
+        <img src="aparat-logo-text-21ZKUw8.png" />
+        <img src="logo.png" />
+    </div>
+    <div class= "container">
+        
+        <div>
+           <div class="secondBlock">
+                <p>
+                    :اگر حساب کاربری ندارید ثبت نام کنید
+                </p>
+                <a class="memberLink" style="padding-left=17px;"  href="/authentication/signup">
+                  <عضویت
+                </a>            
+           </div>
+               
+           <div class="MidleBlock">
+                <P>
+                    :اگر در آپارات حساب کاربری دارید وارد شوید
+                </P>
+                
+                <input class="input" placeholder ="ایمیل، نام کاربری یا شماره موبایل">
+                </input>
+                <i class="material-icons">person</i>
+                <p>
+                    اطلاعات ورود را فراموش کردید؟
+                </p>
+                <a class="HelpLink" href="/authentication/forget">
+                    کمکتون میکنیم
+                </a>
+                <button class="Uperbutton" >
+                    ورود
+                </button>
+                <br>
+                <br>
+                <div class="bottomBlock">
+                    <p class="or" >
+                       &nbsp;&nbsp; یا&nbsp;&nbsp;
+                    </p>
+                    <br>
+                    <br>
+                    <button style="text-align:center;" class="LastButton">
+                        ورود با گوگل  
+                        <img class="GPlusLogo" src="google-plus-57d9e4d53df78c9cceedc5e1.png" >
+                    </button> 
+                </div>
+            </div>
+         </div>
+    </div>
+</body>
+</html>
