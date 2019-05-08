@@ -1,0 +1,158 @@
+.page {
+  
+}
+#root{
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  background: -webkit-linear-gradient(top,
+   rgb(106, 90, 205),rgb(106, 90, 205) 35%, 
+   rgb(185, 183, 183) 30%, rgb(185, 183, 183));
+  position:relative;
+}
+
+.container {
+  width: 30%;
+  margin: auto;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  position:absolute;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  top:30%;
+  right: 35%;
+}
+
+.my-input {
+  display: block;
+  padding: 5px 10px;
+  margin: 10px 0;
+  border: 1px solid #cecccc;
+  border-radius: 4px;
+}
+
+.submit {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+  padding: 5px 0;
+  background-color: green;
+  color: white;
+  border: 1px solid;
+  border-radius: 4px;
+}
+.d1 {
+  
+  width: 30%;
+  display: inline-block;
+  margin: 5px;
+  
+  background: #fff;
+  height:87%;
+  overflow-y: auto;
+}
+
+.d2 {
+    border: 1px solid rgb(106, 90, 205);
+    width: 50%;
+    display: inline-block;
+    height:83%;
+    padding: 1%;
+    position: absolute;
+    top:6px;
+    right:15%;
+    background-image: linear-gradient(rgb(106, 90, 205),rgb(185, 183, 183));
+    overflow-y: auto;
+}
+.conv {
+  text-align: left;
+  
+  background:#fff;
+}
+
+button {
+  padding: 1%;
+}
+.loginLogo{
+    width: 8%;
+    height: 8%;
+    position: absolute;
+    right: 45%;
+}
+.pageUse{
+  text-align: left;
+  font-weight: 700;
+}
+
+.inPageText{
+  font-weight: 300;
+}
+
+.endPageText{
+  position: absolute;
+  right: 40%;
+  top: 85%
+}
+
+.learnLink{
+  position: absolute;
+  right: 36%;
+  top: 25%;
+  color: #fff;
+}
+
+.profileLogo{
+  width: 8%;
+  height: 8%;
+  position: absolute;
+  right: 48%;
+  top: 21%
+}
+
+.onlineIcon{
+  text-align: right;
+  width: 30%;
+  display: inline-block;
+  border: solid rgb(106, 90, 205);
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+}
+
+.contactName{
+  text-align: left;
+  width: 70%;
+  display: inline-block;
+  border: solid rgb(106, 90, 205);
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+}
+
+.personPic{
+ 
+  display: inline-block;
+  width: 5%;
+}
+
+.NameAndDate{
+  display: inline-block;
+  width: 90%;
+
+}
+.conv :hover {
+  background-color: rgb(113, 107, 207);
+}
+
+.respon {
+  text-align: right;
+}
+
+.massegeDate{
+  font-weight: 200;
+  font-size: 10px;
+}
