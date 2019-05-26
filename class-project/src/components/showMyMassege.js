@@ -1,24 +1,22 @@
 import React from 'react'
 
-
 export default class showMyMassege extends React.Component {
-  render() {
-    return(     
+  render () {
+    return (
+      <div >
+
         <div >
-          
-          
-          <div>
-            <span>
-              {this.props.latestMessage}
-            </span>
-          </div>
-          <p className="massegeDate">
-            &nbsp;&nbsp;
-            <span>
-              {this.props.date}
-            </span>
-          </p>
+          <span className='massageSpan'>
+            {this.props.latestMessage}
+          </span>
         </div>
+        <p className='massegeDate'>
+            &nbsp;&nbsp;
+          <span>
+            {this.props.date}
+          </span>
+        </p>
+      </div>
     )
   }
 }

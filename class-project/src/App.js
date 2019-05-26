@@ -1,13 +1,29 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
+import Login from './components/login'
 import Massenger from './components/Massenger'
+import SignUp from './components/signUUP'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import conversation from './reducer/conversation'
+
+const store = createStore(conversation)
 
 class App extends React.Component {
-  render() {
+  render () {
     return (
-      <Massenger/>
-    );
+    //  <Router>
+    //     <Route exact path='/' component={Login} />
+    //     <Route path='/signup' component={SignUp} />
+    //     <Route path='/massenger' component={Massenger} />
+    //   </Router>
+
+      <Provider store={store}>
+        <Massenger />
+      </Provider>
+    )
   }
 }
 
-export default App;
+export default App

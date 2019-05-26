@@ -11,13 +11,25 @@
    rgb(106, 90, 205),rgb(106, 90, 205) 35%, 
    rgb(185, 183, 183) 30%, rgb(185, 183, 183));
   position:relative;
+  padding: 0.5%;
+}
+
+.app2 {
+  display:flex  !important;
+    flex-direction: row;
+    justify-content:flex-start;
+  width:100vw;
+  height: 100vh;
+  background: -webkit-linear-gradient(top,
+   rgb(106, 90, 205),rgb(106, 90, 205) 35%, 
+   rgb(185, 183, 183) 30%, rgb(185, 183, 183));
+  position:relative;
+  
 }
 
 .container {
-  width: 30%;
   margin: auto;
   border: 1px solid gray;
-  border-radius: 10px;
   background-color: white;
   padding: 20px;
   position:absolute;
@@ -26,7 +38,9 @@
   top:30%;
   right: 35%;
 }
-
+.extraLoginEdit{
+  width: 25%;
+}
 .my-input {
   display: block;
   padding: 5px 10px;
@@ -47,30 +61,30 @@
 }
 .d1 {
   
-  width: 30%;
-  display: inline-block;
-  margin: 5px;
-  
+  flex-grow: 15 !important;
+  flex-grow: 2;
+  display: flex;
+    flex-direction: column;
   background: #fff;
-  height:87%;
-  overflow-y: auto;
+  height:100vh;
+  overflow: auto;
 }
 
 .d2 {
-    border: 1px solid rgb(106, 90, 205);
-    width: 50%;
-    display: inline-block;
-    height:83%;
-    padding: 1%;
-    position: absolute;
-    top:6px;
-    right:15%;
-    background-image: linear-gradient(rgb(106, 90, 205),rgb(185, 183, 183));
-    overflow-y: auto;
+  width: 70%;
+  display: flex;
+    flex-direction: column;
+  flex-grow: 5;
+  height:100vh;
+  background-image: linear-gradient(rgb(106, 90, 205),rgb(185, 183, 183));
+ 
 }
 .conv {
+  display: flex;
+    flex-direction: row;
+    justify-content:flex-start; 
+  width: 100%; 
   text-align: left;
-  
   background:#fff;
 }
 
@@ -82,6 +96,11 @@ button {
     height: 8%;
     position: absolute;
     right: 45%;
+}
+
+.conversationImg{
+  width: 20%;
+  
 }
 .pageUse{
   text-align: left;
@@ -109,7 +128,7 @@ button {
   width: 8%;
   height: 8%;
   position: absolute;
-  right: 48%;
+  right: 57%;
   top: 21%
 }
 
@@ -136,14 +155,10 @@ button {
 .personPic{
  
   display: inline-block;
-  width: 5%;
+  width: 70%;
 }
 
-.NameAndDate{
-  display: inline-block;
-  width: 90%;
 
-}
 .conv :hover {
   background-color: rgb(113, 107, 207);
 }
@@ -155,4 +170,93 @@ button {
 .massegeDate{
   font-weight: 200;
   font-size: 10px;
+}
+
+.contactInfo{
+  display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+  width: 80%;
+}
+
+.conversationInfo{
+  height: 50%;
+  display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.chatRoom{
+  overflow-y: auto;
+  height: 90%;
+  text-align: right;
+}
+
+.nameAndState{
+  display: flex;
+    flex-direction: row;
+}
+
+.writeMassage{
+  background-color: #fff;
+  display: flex;
+}
+.imoPlac{
+  width: 20%;
+  border: 1px solid rgb(113, 107, 207);
+}
+.ConversationList{
+  display: flex;
+    flex-direction: column;
+  overflow: auto;
+}
+
+
+.chatTitle{
+  display: flex;
+    flex-direction: row;
+  
+}
+.chatPic{
+  width: 10%;
+}
+.massageSpan{
+  background-color: rgb(73, 22, 114)
+}
+
+.footer {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+
+
+.sender {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  
+}
+.receiver{
+  display: flex;
+  flex-direction: row;
+}
+.message {
+  background-color: blue;
+  border-radius: 0 10px 0 0;
+}
+
+.suggest {
+  font-size: 10px;
+  margin: 0;
+  padding: 5px 15px;
+  border-bottom: 1px solid #1b8ca1;
+
+}
+.suggestedAvatar {
+  width: 15px;
+  border-radius: 7.5px
 }
