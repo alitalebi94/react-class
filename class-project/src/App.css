@@ -15,21 +15,19 @@
 }
 
 .app2 {
-  display:flex  !important;
-    flex-direction: row;
-    justify-content:flex-start;
-  width:100vw;
+  width: 100%;
   height: 100vh;
   background: -webkit-linear-gradient(top,
    rgb(106, 90, 205),rgb(106, 90, 205) 35%, 
    rgb(185, 183, 183) 30%, rgb(185, 183, 183));
   position:relative;
-  
 }
 
-.container {
+.mycontainer {
+  width: 30%;
   margin: auto;
   border: 1px solid gray;
+  border-radius: 10px;
   background-color: white;
   padding: 20px;
   position:absolute;
@@ -38,6 +36,10 @@
   top:30%;
   right: 35%;
 }
+.signUpContainer{
+  background-color: white;
+}
+
 .extraLoginEdit{
   width: 25%;
 }
@@ -61,20 +63,18 @@
 }
 .d1 {
   
-  flex-grow: 15 !important;
-  flex-grow: 2;
-  display: flex;
-    flex-direction: column;
+  
+  padding: 0% !important;
   background: #fff;
   height:100vh;
   overflow: auto;
 }
 
 .d2 {
-  width: 70%;
+  
   display: flex;
     flex-direction: column;
-  flex-grow: 5;
+  
   height:100vh;
   background-image: linear-gradient(rgb(106, 90, 205),rgb(185, 183, 183));
  
@@ -96,6 +96,7 @@ button {
     height: 8%;
     position: absolute;
     right: 45%;
+    top: 20%;
 }
 
 .conversationImg{
@@ -113,8 +114,8 @@ button {
 
 .endPageText{
   position: absolute;
-  right: 40%;
-  top: 85%
+  right: 35%;
+  top: 93%
 }
 
 .learnLink{
@@ -259,4 +260,8 @@ button {
 .suggestedAvatar {
   width: 15px;
   border-radius: 7.5px
+}
+
+.search{
+  margin: 2%;
 }

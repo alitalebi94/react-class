@@ -2,6 +2,8 @@ import React from 'react'
 import logo from './profile.svg'
 import axios from 'axios'
 import { saveContact } from '../action/conversation';
+import Moment from 'react-moment';
+ 
 
 export default class Conversation extends React.Component {
   constructor (props) {
@@ -53,7 +55,9 @@ export default class Conversation extends React.Component {
               </span>
 
               <span>
-                {this.props.date}
+                <Moment format='YYYY/MM/DD'>
+                  {this.props.date}
+                </Moment>
               </span>
             </div >
             <div className='conversationInfo'>

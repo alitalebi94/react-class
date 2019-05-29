@@ -49,8 +49,8 @@ class Login extends React.Component {
   render () {
     return (
       <div className='app' >
-        <img src={logo} alt={'logo'} className='profileLogo' />
-        <div className='container extraLoginEdit'>
+        <img src={logo} alt={'logo'} className='loginLogo' />
+        <div className='mycontainer extraLoginEdit'>
           <p className='pageUse'>sign in</p>
           <p />
           <p className='inPageText'>username:</p>

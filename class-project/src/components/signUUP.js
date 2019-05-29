@@ -2,6 +2,7 @@ import React from 'react'
 import logo from './profile.svg'
 import axios from 'axios'
 import validate from '../validation/validateFunction'
+
 class signUP extends React.Component {
   constructor () {
     super()
@@ -47,7 +48,7 @@ class signUP extends React.Component {
       <div className='app' >
         <img src={logo} alt={'logo'} className='profileLogo' />
         <a href='https://google.com' className='learnLink'>learn more</a>
-        <div className='container'>
+        <div className='mycontainer'>
           <p />
           <p className='pageUse'>sign up</p>
           <p />

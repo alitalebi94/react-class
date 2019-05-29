@@ -111,7 +111,7 @@ export default class ConversationList extends React.Component {
         { this.props.conversationList.map((conversation, index) => {
           return (
             conversation.users.map((user, idx) => {
-              if (user.id !== this.state.myId) {
+              if (user.id != this.state.myId) {
                 return (
                   <ConversationContainer
                     key={index}
