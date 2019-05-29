@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import conversation from './reducer/conversation'
+import Profile from './components/profileComplete'
 
 const store = createStore(conversation)
 
@@ -19,9 +20,10 @@ class App extends React.Component {
     //     <Route path='/massenger' component={Massenger} />
     //   </Router>
 
-      <Provider store={store}>
-        <Massenger />
-      </Provider>
+      // <Provider store={store}>
+      //   <Massenger />
+      // </Provider>
+    <Profile />
      )
   }
 }

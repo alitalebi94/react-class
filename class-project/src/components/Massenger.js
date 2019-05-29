@@ -20,7 +20,7 @@ export default class Massenger extends React.Component {
     console.log("user2::",this.props.user)
     return (
       <div className='clearfix app2'>
-        <div className='navbar hidden-lg'>
+        <div className='navbar navbar-inverse hidden-lg'>
           <ul className='nav navbar-nav'>
             <li><a herf='#'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contact</a> </li>
             <li><a herf='part2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;massage</a> </li>
