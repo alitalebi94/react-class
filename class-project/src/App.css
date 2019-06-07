@@ -243,7 +243,11 @@ button {
 }
 .receiver{
   display: flex;
-  flex-direction: row;
+  flex-direction: row; 
+  justify-content: flex-start;
+}
+.massages{
+  text-align: right;
 }
 .message {
   background-color: blue;

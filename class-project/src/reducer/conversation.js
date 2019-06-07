@@ -26,8 +26,7 @@ function conversation (state = INIT, action) {
         ...state,
         messages: action.payload,
         user: action.user,
-        avatar: action.avatar,
-        conversationId: action.conversationId
+        avatar: action.avatar
       }
     default:
       console.log('2::', state)

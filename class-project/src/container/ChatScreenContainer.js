@@ -9,7 +9,9 @@ const mapStateToProps = state => {
   console.log('3::', state)
   return {
     newMessage: state.newMessage,
-    messages: state.messages
+    messages: state.messages,
+    user: state.user,
+    avatar: state.avatar
   }
 }
 

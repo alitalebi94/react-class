@@ -11,7 +11,7 @@ export default class ChatScreen extends React.Component {
   render () {
     console.log('props2:::::', this.props.messages)
     return (
-      <div className='screen'>
+      <div className='massages'>
         {this.props.messages.map((item, index) => {
           if (item.sender.id == this.state.myId) {
             console.log('props3:::::', item)
@@ -22,8 +22,10 @@ export default class ChatScreen extends React.Component {
             )
           } else {
             return (
-              <div className='receiver'>
-                <span className='message'>{item.message}</span>
+              <div >
+                <div className='receiver'>
+                  <span className='message'>{item.message}</span>
+                </div>
               </div>
             )
           }

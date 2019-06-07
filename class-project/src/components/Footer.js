@@ -17,11 +17,12 @@ export default class Chat extends React.Component {
   }
 
   sendNewMessage () {
+    var conv = window.localStorage.getItem('conv')
     this.props.dispatch(addNewMessage(this.state.newMessage))
     let fdata = new FormData()
     fdata.append('token', this.state.token)
     fdata.append('text', this.state.newMessage)
-    fdata.append('conversation_id', 176)
+    fdata.append('conversation_id', conv)
     console.log('fdata', fdata)
     axios.post('https://api.paywith.click/conversation/create/', fdata)
       .then(response => {

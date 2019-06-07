@@ -5,7 +5,13 @@ const mapDispatchToProps = dispatch => ({
   dispatch: dispatch
 })
 
+const mapStateToProps = state => {
+  return {
+    state: state
+  }
+}
 const FooterContainer = connect(
+  mapStateToProps,
   mapDispatchToProps
 )(Footer)
 

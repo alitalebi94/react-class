@@ -15,11 +15,15 @@ export default class Conversation extends React.Component {
     }
   }
   handleClick (user) {
+    let date = Math.ceil(new Date().getTime() / 1000)
     let fdata = new FormData()
+    window.localStorage.setItem('conv', this.props.conversationId)
+    window.localStorage.setItem('name', this.props.userName)
+    window.localStorage.setItem('avatar', this.props.avatar)
     fdata.append('token', this.state.token)
     fdata.append('conversation_id', this.props.conversationId)
     fdata.append('size', 10)
-    fdata.append('date', new Date())
+    fdata.append('date', date)
     console.log('fdatta', fdata)
     axios.post('https://api.paywith.click/conversation/details/', fdata)
       .then((response) => {
@@ -27,11 +31,8 @@ export default class Conversation extends React.Component {
         this.props.dispatch(saveContact(
           response.data.data.messages,
           this.props.userName,
-          this.props.avatar,
-          this.props.conversationId
-        )
-      )
-        
+          this.props.avatar
+        ))    
       })
       .catch((error) => {
         console.log('error::::', error)
