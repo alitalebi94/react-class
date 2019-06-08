@@ -37,11 +37,11 @@ export default class Massenger extends React.Component {
           <h2>&nbsp;&nbsp;</h2>
           <div className='chatTitle'>
             <div className='chatPic'>
-              <img src={this.props.avatar} alt={'logo'} className='personPic' />
+              <img src={this.props.state.avatar} alt={'logo'} className='personPic' />
             </div>
             <div className='nameAndState'>
               <p className='contactName'>
-                name: {this.props.user}
+                name: {this.props.state.user}
               </p>
               <p className='onlineIcon'>
                 &nbsp;&nbsp;&nbsp;&nbsp;
