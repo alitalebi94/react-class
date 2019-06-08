@@ -84,7 +84,7 @@ export default class ConversationList extends React.Component {
   }
   render () {
     console.log('props:::::', this.state.myId)
-    console.log('c::',this.props.conversationList)
+    console.log('c::', this.props.conversationList)
     console.log('1111111111', this.props.user)
     return (
       <div className='ConversationList'>

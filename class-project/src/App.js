@@ -18,13 +18,12 @@ class App extends React.Component {
     //  <Router>
     //     <Route exact path='/' component={Login} />
     //     <Route path='/signup' component={SignUp} />
-    //     <Route path='/massenger' component={Massenger} />
     //   </Router>
 
-      // <Provider store={store}>
-      //   <Massenger />
-      // </Provider>
-   <Profile />
+      <Provider store={store}>
+        <Massenger />
+      </Provider>
+   //<Profile />
      )
   }
 }

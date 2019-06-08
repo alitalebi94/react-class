@@ -18,8 +18,6 @@ export default class Conversation extends React.Component {
     let date = Math.ceil(new Date().getTime() / 1000)
     let fdata = new FormData()
     window.localStorage.setItem('conv', this.props.conversationId)
-    window.localStorage.setItem('name', this.props.userName)
-    window.localStorage.setItem('avatar', this.props.avatar)
     fdata.append('token', this.state.token)
     fdata.append('conversation_id', this.props.conversationId)
     fdata.append('size', 10)
@@ -31,7 +29,8 @@ export default class Conversation extends React.Component {
         this.props.dispatch(saveContact(
           response.data.data.messages,
           this.props.userName,
-          this.props.avatar
+          this.props.avatar,
+          this.props.conversationId
         ))    
       })
       .catch((error) => {

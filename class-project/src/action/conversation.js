@@ -8,7 +8,10 @@ export const saveConversationList = (conversationList) => ({
   payload: conversationList
 })
 
-export const saveContact = (conversation) => ({
+export const saveContact = (messages, user, avatar, conversationId) => ({
   type: 'SAVE_CONTACT',
-  payload: conversation
+  payload: messages,
+  user: user,
+  avatar: avatar,
+  conversationId: conversationId
 })
